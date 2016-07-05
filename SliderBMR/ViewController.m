@@ -186,6 +186,26 @@
   }
 
 - (IBAction)myMetricUSSwitch:(id)sender {
+  Person* p = [Person sharedPersonInstance];
+  if(!self.myMetricUSSwitch.on)
+  {
+    self.myHeightLabel.text = [NSString stringWithFormat:@"%.2f meters", self.myHeightSlider.value * 3];
+    p.heightInMeters = @(self.myHeightSlider.value * 3);
+    
+    self.myMassLabel.text = [NSString stringWithFormat:@"%.2f Kg", self.myMassSlider.value * 200];
+    p.weightInKg = @(self.myMassSlider.value * 200);
+  }
+  
+  else if(self.myMetricUSSwitch.on)
+  {
+    self.myHeightLabel.text = [NSString stringWithFormat:@"%.2f feet", self.myHeightSlider.value * 3 * 3.281];
+    p.heightInMeters = @(self.myHeightSlider.value * 3);
+    
+    self.myMassLabel.text = [NSString stringWithFormat:@"%.2f Pounds", self.myMassSlider.value * 200 * 2.2046];
+    p.weightInKg = @(self.myMassSlider.value * 200);
+    
+  }
+
   
 }
 
