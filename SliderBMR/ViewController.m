@@ -32,8 +32,17 @@
 - (IBAction)myMassSlider:(id)sender
 {
   Person* p = [Person sharedPersonInstance];
+  if(!self.myMetricUSSwitch.on)
+  {
   self.myMassLabel.text = [NSString stringWithFormat:@"%.2f Kg", self.myMassSlider.value * 200];
   p.weightInKg = @(self.myMassSlider.value * 200);
+  }
+  else if(self.myMetricUSSwitch.on)
+  {
+    self.myMassLabel.text = [NSString stringWithFormat:@"%.2f Pounds", self.myMassSlider.value * 200 * 2.2046];
+    p.weightInKg = @(self.myMassSlider.value * 200);
+  }
+    
   NSNumber *bmi = p.bmi;
   NSNumber *bmr = p.bmr;
   self.myBMILabel.text = [NSString stringWithFormat: @"BMI: %.2f", bmi.floatValue ];
@@ -62,8 +71,20 @@
 
 - (IBAction)myHeightSlider:(id)sender {
   Person* p = [Person sharedPersonInstance];
+  
+  if(!self.myMetricUSSwitch.on)
+  {
   self.myHeightLabel.text = [NSString stringWithFormat:@"%.2f meters", self.myHeightSlider.value * 3];
   p.heightInMeters = @(self.myHeightSlider.value * 3);
+  }
+  
+  else if(self.myMetricUSSwitch.on)
+  {
+    self.myHeightLabel.text = [NSString stringWithFormat:@"%.2f feet", self.myHeightSlider.value * 3 * 3.281];
+    p.heightInMeters = @(self.myHeightSlider.value * 3);
+  }
+  
+  
   NSNumber *bmi = p.bmi;
   NSNumber *bmr = p.bmr;
   self.myBMILabel.text = [NSString stringWithFormat: @"BMI: %.2f", bmi.floatValue ];
@@ -165,5 +186,8 @@
   }
 
 - (IBAction)myMetricUSSwitch:(id)sender {
+  
 }
+
+
 @end
