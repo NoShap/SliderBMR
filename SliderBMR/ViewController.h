@@ -36,5 +36,10 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *myImageView;
 
+
+@property (weak, nonatomic) IBOutlet UISwitch *myMetricUSSwitch;
+- (IBAction)myMetricUSSwitch:(id)sender;
+
+
 @end
 

@@ -171,6 +171,9 @@
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="311" y="341" width="51" height="31"/>
                                 </variation>
+                                <connections>
+                                    <action selector="myMetricUSSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="hfw-Qx-pne"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your BMI: 0 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ng-ve-aba">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
@@ -297,6 +300,7 @@
                         <outlet property="myImageView" destination="uid-KC-T7j" id="dD1-wJ-oUe"/>
                         <outlet property="myMassLabel" destination="d3X-QS-4vg" id="QnA-YE-5TF"/>
                         <outlet property="myMassSlider" destination="gkP-JD-uBF" id="WFh-si-r4Z"/>
+                        <outlet property="myMetricUSSwitch" destination="aAt-6r-E4l" id="Xyf-KU-zVJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
