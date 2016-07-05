@@ -187,15 +187,6 @@
                                     <rect key="frame" x="25" y="420" width="143" height="26"/>
                                 </variation>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Waiting.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="uid-KC-T7j">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="117" y="444" width="189" height="123"/>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="84" y="473" width="248" height="188"/>
-                                </variation>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your BMR: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8j-qD-pyk">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
@@ -226,18 +217,15 @@
                                     <rect key="frame" x="259" y="351" width="49" height="21"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weeks for Normal BMI: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ji3-rd-vmd">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <color key="textColor" red="0.27499076519806648" green="0.45375997641770849" blue="0.24050379224746296" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Waiting.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="uid-KC-T7j">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="95" y="566" width="232" height="26"/>
+                                    <rect key="frame" x="117" y="444" width="189" height="123"/>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="100" y="703" width="232" height="26"/>
+                                    <rect key="frame" x="84" y="500" width="248" height="188"/>
                                 </variation>
-                            </label>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <variation key="default">
@@ -255,11 +243,10 @@
                                 <exclude reference="Jhr-0n-LCx"/>
                                 <exclude reference="aAt-6r-E4l"/>
                                 <exclude reference="0Ng-ve-aba"/>
-                                <exclude reference="uid-KC-T7j"/>
                                 <exclude reference="h8j-qD-pyk"/>
                                 <exclude reference="EcC-Xk-tUv"/>
                                 <exclude reference="fLC-V6-JcY"/>
-                                <exclude reference="Ji3-rd-vmd"/>
+                                <exclude reference="uid-KC-T7j"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -277,9 +264,8 @@
                                 <include reference="Jhr-0n-LCx"/>
                                 <include reference="aAt-6r-E4l"/>
                                 <include reference="0Ng-ve-aba"/>
-                                <include reference="uid-KC-T7j"/>
                                 <include reference="h8j-qD-pyk"/>
-                                <include reference="Ji3-rd-vmd"/>
+                                <include reference="uid-KC-T7j"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
