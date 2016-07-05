@@ -13,6 +13,11 @@
 		6E58D5FC1D26C95F006E9892 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E58D5FA1D26C95F006E9892 /* Main.storyboard */; };
 		6E58D5FE1D26C95F006E9892 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E58D5FD1D26C95F006E9892 /* Assets.xcassets */; };
 		6E58D6011D26C95F006E9892 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E58D5FF1D26C95F006E9892 /* LaunchScreen.storyboard */; };
+		6E58D60A1D26C9AB006E9892 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E58D6091D26C9AB006E9892 /* Person.m */; };
+		6EF353AF1D2701B4002CACC2 /* Waiting.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6EF353AB1D2701B4002CACC2 /* Waiting.jpg */; };
+		6EF353B01D2701B4002CACC2 /* Skinny.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6EF353AC1D2701B4002CACC2 /* Skinny.jpg */; };
+		6EF353B11D2701B4002CACC2 /* Healthy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6EF353AD1D2701B4002CACC2 /* Healthy.jpg */; };
+		6EF353B21D2701B4002CACC2 /* Overweight.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6EF353AE1D2701B4002CACC2 /* Overweight.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,12 @@
 		6E58D5FD1D26C95F006E9892 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E58D6001D26C95F006E9892 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E58D6021D26C95F006E9892 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E58D6081D26C9AB006E9892 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		6E58D6091D26C9AB006E9892 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		6EF353AB1D2701B4002CACC2 /* Waiting.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Waiting.jpg; sourceTree = "<group>"; };
+		6EF353AC1D2701B4002CACC2 /* Skinny.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Skinny.jpg; sourceTree = "<group>"; };
+		6EF353AD1D2701B4002CACC2 /* Healthy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Healthy.jpg; sourceTree = "<group>"; };
+		6EF353AE1D2701B4002CACC2 /* Overweight.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Overweight.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +73,12 @@
 				6E58D5F51D26C95F006E9892 /* AppDelegate.m */,
 				6E58D5F71D26C95F006E9892 /* ViewController.h */,
 				6E58D5F81D26C95F006E9892 /* ViewController.m */,
+				6E58D6081D26C9AB006E9892 /* Person.h */,
+				6E58D6091D26C9AB006E9892 /* Person.m */,
+				6EF353AB1D2701B4002CACC2 /* Waiting.jpg */,
+				6EF353AC1D2701B4002CACC2 /* Skinny.jpg */,
+				6EF353AD1D2701B4002CACC2 /* Healthy.jpg */,
+				6EF353AE1D2701B4002CACC2 /* Overweight.jpg */,
 				6E58D5FA1D26C95F006E9892 /* Main.storyboard */,
 				6E58D5FD1D26C95F006E9892 /* Assets.xcassets */,
 				6E58D5FF1D26C95F006E9892 /* LaunchScreen.storyboard */,
@@ -137,8 +154,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E58D6011D26C95F006E9892 /* LaunchScreen.storyboard in Resources */,
+				6EF353AF1D2701B4002CACC2 /* Waiting.jpg in Resources */,
 				6E58D5FE1D26C95F006E9892 /* Assets.xcassets in Resources */,
+				6EF353B11D2701B4002CACC2 /* Healthy.jpg in Resources */,
 				6E58D5FC1D26C95F006E9892 /* Main.storyboard in Resources */,
+				6EF353B21D2701B4002CACC2 /* Overweight.jpg in Resources */,
+				6EF353B01D2701B4002CACC2 /* Skinny.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +172,7 @@
 			files = (
 				6E58D5F91D26C95F006E9892 /* ViewController.m in Sources */,
 				6E58D5F61D26C95F006E9892 /* AppDelegate.m in Sources */,
+				6E58D60A1D26C9AB006E9892 /* Person.m in Sources */,
 				6E58D5F31D26C95F006E9892 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +322,7 @@
 				6E58D6071D26C95F006E9892 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
